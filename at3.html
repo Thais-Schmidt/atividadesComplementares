@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        * body {
+            font-family: monospace;
+        }
+
+        .container {
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction:row ;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        #menu {
+            background-color: white;
+            width: 200px;
+            height: 440px;
+            border: black solid 0.3px;
+            border-radius: 15px;
+            justify-content: center;
+        }
+
+        button {
+            background-color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: monospace;
+            outline: unset;
+            border: black 0.5px solid;
+            border-radius: 3px;
+            width: 160px;
+            height: 25px;
+            margin: 5px 20px 0px 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        h2{
+            font-weight: bold;
+            margin-top: 15px;
+            font-size:x-large;
+            text-align: center;
+        }
+
+        h3{
+            font-weight: bold;
+            margin-top: 15px;
+            font-size:x-large;
+            margin: 10px 10px 10px 10px;
+        }
+
+        #enunciado{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 570px;
+            height: 110px;
+            text-align: justify;
+            margin: auto;
+
+            border: black solid 0.3px;
+            border-radius: 15px;
+
+        }
+
+        #exercicio{
+            /* background-color: blueviolet; */
+            height: auto;
+            width: 1000px;
+            margin: auto;
+            flex-direction: column;
+            
+        }
+
+        input{
+            font-family: monospace;
+            background-color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: monospace;
+            outline: unset;
+            border: black 0.5px solid;
+            border-radius: 3px;
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #resolucao{
+            /* background-color: darkmagenta; */
+            margin-top: 50px;
+            text-align: center;
+            font-family: monospace;
+            height: max-content;
+
+        }
+
+        #resposta{
+            /* background-color: aquamarine; */
+            font-family: monospace;
+            font-size: x-large;
+            height: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #atv a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+
+    <div class="container">
+
+        <div id="atividades">
+            
+            <div id="menu">
+            
+                <h2>Atividades Complementares:</h2> <br>
+                
+                <button id="atv"> <a href="file:///c%3A/Users/thais/OneDrive/%C3%81rea%20de%20Trabalho/curso/atividadesComplementares/at1.html"> Atividade 1 </a> </button> <br><br>
+                <button id="atv"> <a href="file:///c%3A/Users/thais/OneDrive/%C3%81rea%20de%20Trabalho/curso/atividadesComplementares/at2.html"> Atividade 2 </a> </button> <br><br>
+                <button id="atv"> <a href="file:///c%3A/Users/thais/OneDrive/%C3%81rea%20de%20Trabalho/curso/atividadesComplementares/at3.html"> Atividade 3 </a> </button> <br><br>
+                <button id="atv"> Atividade 4 </button> <br><br>
+                <button id="atv"> Atividade 5 </button> <br><br>
+                <button id="atv"> Atividade 6 </button> <br><br>
+                <button id="atv"> Atividade 7 </button> <br><br>
+                <button id="atv"> Atividade 8 </button> <br><br>
+
+            </div>
+
+        </div>
+
+        <div id="exercicio">
+
+            <div id="enunciado">
+
+                <h3>Faça uma FUNÇÃO em JavaScript que receba 3 números inteiros e diferentes, 
+                armazene-os em um ARRAY e, em seguida, exibir no html o maior dos 3 números.  </h3>
+
+            </div>
+
+            <div id="resolucao">
+
+                <h3>Digite o primeiro numero:</h3>
+                <input type="text" id="numeroUm">
+
+                <h3>Digite o segundo numero:</h3>
+                <input type="text" id="numeroDois">
+
+                <h3>Digite o terceiro numero:</h3>
+                <input type="text" id="numeroTres">
+
+                <br><br>
+
+                <button onclick="calcular()">Exibir</button>
+
+            </div>
+
+            <div id="resposta">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function calcular(){
+
+            let array = new Array(2)
+            array[0] = parseInt(document.getElementById("numeroUm").value);
+            array[1] = parseInt(document.getElementById("numeroDois").value);
+            array[2] = parseInt(document.getElementById("numeroTres").value);
+
+
+
+
+            // document.getElementById("resposta").innerHTML = ("O numero " +i+ " é o maior número.");
+
+        }
+
+    </script>
+    
+</body>
+</html>
