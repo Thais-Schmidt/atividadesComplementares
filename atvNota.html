@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota</title>
+</head>
+<body>
+
+    <p>Nota 1</p> <br>
+    <input id="nota1" type="text"> <br><br>
+
+    <p>Nota 2</p> <br>
+    <input id="nota2" type="text"> <br><br>
+
+    <p>Nota 3</p> <br>
+    <input id="nota3" type="text"> <br><br>
+
+    <button id="calcular" onclick="media()">Calcular</button> <br><br>
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function media(){
+            let notaUm = parseFloat(document.getElementById("nota1").value);
+            let notaDois = parseFloat(document.getElementById("nota2").value);
+            let notaTres = parseFloat(document.getElementById("nota3").value);
+
+            let soma = (notaUm + notaDois + notaTres) / 3;
+            
+            if(soma >= 7){
+                alert("O aluno foi aprovado");
+
+                document.getElementById("resposta").innerText = "A media do aluno foi "+soma.toFixed(1)+" e ele foi: Aprovado."
+            }
+            else{
+                alert("O aluno foi reprovado");
+
+                document.getElementById("resposta").innerText = "A media do aluno foi "+soma.toFixed(1)+" e ele foi: Reprovado."
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>

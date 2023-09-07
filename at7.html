@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 2</title>
+    <title>Atividade 7</title>
 </head>
 <body>
-
+    
     <style>
         * {
             margin: 0%;
@@ -48,6 +48,8 @@
             margin: 5px 20px 0px 20px;
             cursor: pointer;
             transition: 0.5s;
+            
+
         }
 
         button:hover{
@@ -73,7 +75,7 @@
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             width: 570px;
-            height: 100px;
+            height: 140px;
             text-align: justify;
             margin: auto;
 
@@ -157,18 +159,13 @@
 
             <div id="enunciado">
 
-                <h3>Faça uma FUNÇÃO em Javascript que receba um número inteiro verifique se o número é par ou ímpar.
-                Exibir uma mensagem com a resposta. </h3>
+                <h3></h3>
 
             </div>
 
             <div id="resolucao">
 
-                <h3>Digite um numero:</h3>
-                <input type="text" id="numero">
-
-                <br><br>
-
+                
                 <button onclick="calcular()">Exibir</button>
 
                 
@@ -184,23 +181,26 @@
 
     <script>
 
-        function calcular(){
+        var cores = Array['verde','verde','verde','branco','verde',
+        'branco','branco','amarelo','vermelho','branco',
+        'verde','branco','amarelo','vermelho','roxo',
+        'verde','braco','azul','azul','roxo',
+        'branco','verde','verde','verde','branco']
 
-            let num = parseInt(document.getElementById("numero").value);
-            let div = num % 2;
+        var numeros = Array['0','1','2','3','4',
+        '5','6','7','8','9',
+        '10','11','12','13','14',
+        '15','16','17','18','19',
+        '20','21','22','23','24']
 
-            if (div === 0 && num !== 0){
-                document.getElementById("resposta").innerHTML = ("Este número é PAR.")
-            } else if (num === 0){
-                document.getElementById("resposta").innerHTML = ("Este número é NULO.")
-            }
-            else{
-                document.getElementById("resposta").innerHTML = ("Este número é IMPAR.")
-            }
+        
 
-        }
+        
 
+
+    
     </script>
 
+    
 </body>
 </html>
